@@ -14,15 +14,24 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          # 👇 pnpm 캐시 활용을 위한 설정
           cache: 'pnpm'
-      - run: pnpm
-      #👇 Adds Chromatic as a step in the workflow
+
+      # 👇 pnpm 설치
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      # 👇 의존성 설치를 pnpm으로 실행
+      - name: Install dependencies
+        run: pnpm install
+
+      # Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
-        # Options required for Chromatic's GitHub Action
         with:
-          #👇 Chromatic projectToken,
+          # Chromatic projectToken,
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
