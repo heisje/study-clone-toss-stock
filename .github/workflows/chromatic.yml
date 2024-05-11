@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 18
           # 👇 pnpm 캐시 활용을 위한 설정
-          cache: 'pnpm'
+          # cache: 'pnpm'
 
       # 👇 pnpm 설치
       - name: Install pnpm
