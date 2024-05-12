@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview" ,
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -23,6 +26,12 @@
     "@storybook/test": "^8.0.10",
     "chromatic": "^11.3.2",
     "prop-types": "^15.8.1",
+    "rollup": "^4.17.2",
     "storybook": "^8.0.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.2.11"
   }
 }
