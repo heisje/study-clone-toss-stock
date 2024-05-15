@@ -30,6 +30,7 @@
     "chromatic": "npx chromatic --project-token=chpt_4b5998b00f3e2ce"
   },
   "dependencies": {
+    "styled-components": "^6.1.11",
     "vite-plugin-dts": "^3.9.1",
     "vite-tsconfig-paths": "^4.3.2"
   },
