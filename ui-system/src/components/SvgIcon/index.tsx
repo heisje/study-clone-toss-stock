@@ -1,7 +1,7 @@
 import Svgs from "@/shared/svgs/sprites.svg"
 import {HTMLAttributes} from "react";
 
-type SVGIconNames =
+export type SVGIconNames =
     | 'search'
     | 'home'
     | 'benefit'
@@ -24,14 +24,14 @@ type SVGIconNames =
     | 'fire'
     | 'toss'
 
-interface SVGIconProps extends HTMLAttributes<SVGElement> {
+export interface SVGIconProps extends HTMLAttributes<SVGElement> {
     iconId: SVGIconNames;
-    size: number;
+    size?: number;
 }
 
-export const SvgIcon = ({id, size = 24, ...props}: SVGIconProps) => (
+export const SvgIcon = ({iconId, size = 24, ...props}: SVGIconProps) => (
     <svg width={size} height={size} {...props}>
-        <use href={`${Svgs}#${id}`}/>
+        <use href={`${Svgs}#${iconId}`}/>
     </svg>
 )
 

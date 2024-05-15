@@ -7,7 +7,7 @@ function App() {
 
     return (
         <>
-            <SvgIcon id={'pay'} size={24}/>
+            <SvgIcon iconId={"pay"}/>
         </>
     )
 }
