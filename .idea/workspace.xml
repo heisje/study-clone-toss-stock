@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a921553a-c7a0-4e30-b8b2-c184078758d3" name="변경" comment="fix: chromatic working directory" />
+    <list default="true" id="a921553a-c7a0-4e30-b8b2-c184078758d3" name="변경" comment="set: styled-components">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-system/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui-system/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-system/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui-system/src/components/Button/Button.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +37,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -46,19 +56,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/home/WebstormProjects/study-clone-toss-stock",
+    "last_opened_file_path": "/Users/home/WebstormProjects/study-clone-toss-stock/ui-system/src/shared/svgs",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
     "ts.external.directory.path": "/Users/home/WebstormProjects/study-clone-toss-stock/ui-system/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ui-system/src/shared/svgs" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -66,7 +82,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build-rollup">
+  <component name="RunManager" selected="npm.dev (1)">
     <configuration name="build-rollup" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -82,6 +98,16 @@
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/ui-system/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -109,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.build-rollup" />
         <item itemvalue="npm.storybook" />
         <item itemvalue="npm.dev" />
@@ -127,7 +154,9 @@
       <workItem from="1715441110546" duration="23069000" />
       <workItem from="1715512152989" duration="4185000" />
       <workItem from="1715517685857" duration="12388000" />
-      <workItem from="1715769696652" duration="2985000" />
+      <workItem from="1715769696652" duration="6182000" />
+      <workItem from="1715782250152" duration="657000" />
+      <workItem from="1715784605358" duration="3644000" />
     </task>
     <task id="LOCAL-00001" summary="feat: chromatic setting">
       <option name="closed" value="true" />
@@ -257,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715772352766</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="set: styled-components">
+      <option name="closed" value="true" />
+      <created>1715773475747</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715773475747</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +311,7 @@
     <MESSAGE value="change-repo" />
     <MESSAGE value="set: chromatic" />
     <MESSAGE value="fix: chromatic working directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: chromatic working directory" />
+    <MESSAGE value="set: styled-components" />
+    <option name="LAST_COMMIT_MESSAGE" value="set: styled-components" />
   </component>
 </project>

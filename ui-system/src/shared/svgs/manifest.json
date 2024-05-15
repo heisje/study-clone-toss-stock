@@ -1,0 +1,86 @@
+{
+  "search": {
+    "width": 24,
+    "height": 24
+  },
+  "home": {
+    "width": 24,
+    "height": 24
+  },
+  "benefit": {
+    "width": 24,
+    "height": 24
+  },
+  "pay": {
+    "width": 24,
+    "height": 24
+  },
+  "stock": {
+    "width": 24,
+    "height": 24
+  },
+  "line_three": {
+    "width": 24,
+    "height": 24
+  },
+  "heart": {
+    "width": 24,
+    "height": 24
+  },
+  "arrow_right": {
+    "width": 24,
+    "height": 24
+  },
+  "rocket": {
+    "width": 24,
+    "height": 24
+  },
+  "increase": {
+    "width": 24,
+    "height": 24
+  },
+  "pot": {
+    "width": 24,
+    "height": 24
+  },
+  "korea": {
+    "width": 24,
+    "height": 24
+  },
+  "usa": {
+    "width": 24,
+    "height": 24
+  },
+  "graduate": {
+    "width": 24,
+    "height": 24
+  },
+  "factory": {
+    "width": 24,
+    "height": 24
+  },
+  "vehicle": {
+    "width": 24,
+    "height": 24
+  },
+  "meat": {
+    "width": 24,
+    "height": 24
+  },
+  "clothes": {
+    "width": 24,
+    "height": 24
+  },
+  "cosmetic": {
+    "width": 24,
+    "height": 24
+  },
+  "fire": {
+    "width": 24,
+    "height": 24
+  },
+  "toss": {
+    "width": 24,
+    "height": 24
+  }
+}
