@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a921553a-c7a0-4e30-b8b2-c184078758d3" name="변경" comment="fix: chromatic working directory">
       <change beforePath="$PROJECT_DIR$/.github/workflows/chromatic.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/chromatic.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +130,7 @@
       <workItem from="1715441110546" duration="23069000" />
       <workItem from="1715512152989" duration="4185000" />
       <workItem from="1715517685857" duration="12388000" />
-      <workItem from="1715769696652" duration="1422000" />
+      <workItem from="1715769696652" duration="2135000" />
     </task>
     <task id="LOCAL-00001" summary="feat: chromatic setting">
       <option name="closed" value="true" />
@@ -235,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715771028627</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix: chromatic working directory">
+      <option name="closed" value="true" />
+      <created>1715771153851</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715771153851</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
