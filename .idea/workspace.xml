@@ -129,7 +129,7 @@
       <workItem from="1715441110546" duration="23069000" />
       <workItem from="1715512152989" duration="4185000" />
       <workItem from="1715517685857" duration="12388000" />
-      <workItem from="1715769696652" duration="1324000" />
+      <workItem from="1715769696652" duration="1422000" />
     </task>
     <task id="LOCAL-00001" summary="feat: chromatic setting">
       <option name="closed" value="true" />
@@ -227,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715770931988</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix: chromatic working directory">
+      <option name="closed" value="true" />
+      <created>1715771028627</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715771028627</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
