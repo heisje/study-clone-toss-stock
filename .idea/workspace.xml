@@ -4,47 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a921553a-c7a0-4e30-b8b2-c184078758d3" name="변경" comment="install: rollup-bundling">
-      <change beforePath="$PROJECT_DIR$/.cache/storybook/default/dev-server/a5a8bf6e622aef57065c6498611f40c911543d7d-3920d97c51b8ad2521918fb1205babd22b0ed3d7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/storybook/default/dev-server/a5a8bf6e622aef57065c6498611f40c911543d7d-43fdebe5fc35e4e9fabee9a83c7faea931b05ea0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cache/storybook/default/dev-server/a5a8bf6e622aef57065c6498611f40c911543d7d-f086b87885981c04ce7a583ff90a49313de83de7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/chromatic.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/study-clone-toss-stock.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/preview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/Button.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/Button.stories.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/Configure.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/Header.stories.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/Page.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/Page.stories.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/accessibility.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/accessibility.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/addon-library.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/assets.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/avif-test-image.avif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/context.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/discord.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/docs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/figma-plugin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/github.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/share.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/styling.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/testing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/theming.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/tutorials.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/assets/youtube.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/page.css" beforeDir="false" />
+    <list default="true" id="a921553a-c7a0-4e30-b8b2-c184078758d3" name="변경" comment="change-repo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-system/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui-system/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui-system/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ui-system/pnpm-lock.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +131,7 @@
       <workItem from="1715441110546" duration="23069000" />
       <workItem from="1715512152989" duration="4185000" />
       <workItem from="1715517685857" duration="12388000" />
-      <workItem from="1715769696652" duration="51000" />
+      <workItem from="1715769696652" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="feat: chromatic setting">
       <option name="closed" value="true" />
@@ -242,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715761834901</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="change-repo">
+      <option name="closed" value="true" />
+      <created>1715769837891</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715769837891</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +227,7 @@
     <MESSAGE value="set: vite" />
     <MESSAGE value="install: vite react reactdom rollup" />
     <MESSAGE value="install: rollup-bundling" />
-    <option name="LAST_COMMIT_MESSAGE" value="install: rollup-bundling" />
+    <MESSAGE value="change-repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="change-repo" />
   </component>
 </project>

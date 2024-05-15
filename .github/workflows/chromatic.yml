@@ -1,0 +1,40 @@
+# Workflow name
+name: 'Chromatic Publish'
+
+# Event for the workflow
+on: push
+
+# List of jobs
+jobs:
+  test:
+    # Operating System
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ui-system
+    # Job steps
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          # 👇 pnpm 캐시 활용을 위한 설정
+          # cache: 'pnpm'
+
+      # 👇 pnpm 설치
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      # 👇 의존성 설치를 pnpm으로 실행
+      - name: Install dependencies
+        run: pnpm install
+
+      # Adds Chromatic as a step in the workflow
+      - uses: chromaui/action@v1
+        with:
+          # Chromatic projectToken,
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
