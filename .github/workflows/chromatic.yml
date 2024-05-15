@@ -11,12 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ui-system
+        working-directory: ./ui-system
     # Job steps
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          path: ui-system
 
       - uses: actions/setup-node@v3
         with:
