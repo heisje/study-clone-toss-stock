@@ -9,9 +9,7 @@ jobs:
   test:
     # Operating System
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./ui-system
+
     # Job steps
     steps:
       - uses: actions/checkout@v3
@@ -27,10 +25,12 @@ jobs:
 
       # 👇 pnpm 설치
       - name: Install pnpm
+        working-directory: ./ui-system
         run: npm install -g pnpm
 
       # 👇 의존성 설치를 pnpm으로 실행
       - name: Install dependencies
+        working-directory: ./ui-system
         run: pnpm install
 
       # Adds Chromatic as a step in the workflow
