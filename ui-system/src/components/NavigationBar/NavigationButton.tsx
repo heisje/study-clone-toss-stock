@@ -28,27 +28,14 @@ const StyledButton = styled.button`
   // color
   background: none;
   border: none;
+  color: var(--blue-grey-tone-grey04);
 
   //etc
   cursor: pointer; /* 클릭 가능한 커서 스타일 */
 
-  &:hover {
-  }
-
-  &:active {
-    background: var(--blue-grey-tone-grey-07);
-  }
-
-  svg {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-  }
-
   label {
-    color: var(--blue-grey-tone-grey-04);
+    color: var(--blue-grey-tone-grey04);
 
-    /* 명칭7 */
     // font-family: Pretendard;
     font-size: 10px;
     font-style: normal;
@@ -56,9 +43,34 @@ const StyledButton = styled.button`
     line-height: 12px; /* 120% */
     letter-spacing: -0.05px;
   }
+
+  &:hover {
+    color: var(--black-white-white);
+
+    label {
+      color: var(--black-white-white);
+    }
+  }
+
+  &:active {
+    color: var(--black-white-white);
+    background-color: var(--blue-grey-tone-grey07);
+
+    label {
+      color: var(--black-white-white);
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
 `;
 
-const DefaultIcon = () => <SvgIcon iconId="home" size={"1.5rem"} />;
+const DefaultIcon = ({ ...props }) => (
+  <SvgIcon iconId="home" size={"1.5rem"} {...props} />
+);
 
 export const NavigationButton = ({
   label,
