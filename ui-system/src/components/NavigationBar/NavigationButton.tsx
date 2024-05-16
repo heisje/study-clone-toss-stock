@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ComponentType, ReactNode } from "react";
 import { SvgIcon } from "@/components/SvgIcon";
+import "@/shared/global.css";
 
 interface NavigationButtonProps {
   label: string;
@@ -10,19 +11,32 @@ interface NavigationButtonProps {
 }
 
 const StyledButton = styled.button`
+  // layouts
   display: flex;
-  width: 48px;
-  height: 48px;
-  padding: 2px 12px 8px 12px;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.125rem 0.75rem 0.5rem 0.75rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2px;
+  gap: 0.125rem;
   flex-shrink: 0;
+
+  // shape
+  border-radius: 0.875rem;
+
+  // color
+  background: none;
+  border: none;
+
+  //etc
   cursor: pointer; /* 클릭 가능한 커서 스타일 */
 
   &:hover {
-    background-color: #0056b3; /* 호버 시 색상 변경 */
+  }
+
+  &:active {
+    background: var(--blue-grey-tone-grey-07);
   }
 
   svg {
@@ -30,9 +44,21 @@ const StyledButton = styled.button`
     height: 24px;
     flex-shrink: 0;
   }
+
+  label {
+    color: var(--blue-grey-tone-grey-04);
+
+    /* 명칭7 */
+    // font-family: Pretendard;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 120% */
+    letter-spacing: -0.05px;
+  }
 `;
 
-const DefaultIcon = () => <SvgIcon iconId="rocket" size={24} />;
+const DefaultIcon = () => <SvgIcon iconId="home" size={"1.5rem"} />;
 
 export const NavigationButton = ({
   label,
@@ -41,7 +67,7 @@ export const NavigationButton = ({
   ...props
 }: NavigationButtonProps) => {
   return (
-    <StyledButton type="button" {...props}>
+    <StyledButton className={"icon-red"} type="button" {...props}>
       <SvgIconComponent />
       <label>{label}</label>
       {children}
