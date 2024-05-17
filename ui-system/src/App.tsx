@@ -1,15 +1,16 @@
 // import {useState} from 'react'
-import './App.css'
-import {SvgIcon} from "@/components/SvgIcon";
+import "./App.css";
+import { NavigationBar } from "@/components/NavigationBar";
 
 function App() {
-    // const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
-    return (
-        <>
-            <SvgIcon iconId={"pay"}/>
-        </>
-    )
+  return (
+    <>
+      {/*<SvgIcon iconId={"pay"} />*/}
+      <NavigationBar />
+    </>
+  );
 }
 
-export default App
+export default App;

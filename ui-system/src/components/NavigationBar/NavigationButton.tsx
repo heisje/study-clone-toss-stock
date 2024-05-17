@@ -73,9 +73,9 @@ const DefaultIcon = ({ ...props }) => (
 );
 
 export const NavigationButton = ({
-  label,
   SvgIconComponent = DefaultIcon,
   children,
+  label,
   ...props
 }: NavigationButtonProps) => {
   return (
