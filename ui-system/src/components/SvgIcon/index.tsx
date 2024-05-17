@@ -1,7 +1,8 @@
 import Svgs from "@/shared/svgs/sprites.svg";
 import { HTMLAttributes } from "react";
+import styled from "styled-components";
 
-export type SVGIconNames =
+export type SVGIconType =
   | "search"
   | "home"
   | "benefit"
@@ -22,21 +23,32 @@ export type SVGIconNames =
   | "clothes"
   | "cosmetic"
   | "fire"
-  | "toss";
+  | "toss"
+  | "default_profile";
 
 export interface SVGIconProps extends HTMLAttributes<SVGElement> {
-  iconId: SVGIconNames;
+  iconId: SVGIconType;
   size?: string;
   color?: string;
 }
 
+const Svg = styled.svg`
+  position: relative;
+`;
+
+const Use = styled.use`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+`;
+
 export const SvgIcon = ({
   iconId,
-  size = "1.5rem",
+  size = "100%",
   color,
   ...props
 }: SVGIconProps) => (
-  <svg width={size} height={size} color={color} {...props}>
-    <use href={`${Svgs}#${iconId}`} />
-  </svg>
+  <Svg color={color} width={size} height={size} {...props}>
+    <Use href={`${Svgs}#${iconId}`} width={size} height={size} />
+  </Svg>
 );

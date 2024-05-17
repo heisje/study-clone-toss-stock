@@ -6,7 +6,7 @@
 //   plugins: [react()],
 // })
 
-import { defineConfig } from "vite";
+import {defineConfig} from "vite";
 import * as path from "path";
 import dts from "vite-plugin-dts";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -23,7 +23,7 @@ export default defineConfig({
     // 빌드할 라이브러리에 대한 설정
     lib: {
       // 라이브러리의 진입점
-      entry: path.resolve(__dirname, "src/index.tsx"),
+      entry: path.resolve(__dirname, "src/Card.tsx"),
       name: "index",
       fileName: "index",
     },
@@ -41,7 +41,7 @@ export default defineConfig({
     },
   },
 
-// 절대경로
+  // 절대경로
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

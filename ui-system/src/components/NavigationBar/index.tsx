@@ -12,7 +12,7 @@ const NavigationContainer = styled.nav`
   gap: 1.875rem;
 
   border-radius: 1.375rem 1.375rem 0rem 0rem;
-  background: var(--blue-grey-tone-grey-08, #17171b);
+  background: var(--blue-grey-tone-grey-08);
   box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset;
 `;
 

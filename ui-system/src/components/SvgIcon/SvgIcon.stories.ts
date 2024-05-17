@@ -13,6 +13,6 @@ type Story = StoryObj<typeof meta>;
 export const Rocket: Story = {
   args: {
     iconId: "rocket",
-    size: "1.5rem",
+    size: "100%",
   },
 };

@@ -32,6 +32,12 @@
     <symbol id="arrow_right" width="24" height="24" fill="none" viewBox="0 0 24 24">
       <path fill="currentColor" fill-rule="evenodd" d="M17.015 18.141c-.259 0-.518-.101-.72-.292a1.012 1.012 0 0 1 0-1.429l4.354-4.354-4.354-4.342a1.013 1.013 0 0 1 0-1.429 1.012 1.012 0 0 1 1.429 0l5.062 5.063a1.012 1.012 0 0 1 0 1.428l-5.062 5.063c-.192.191-.45.292-.709.292Z" clip-rule="evenodd"/>
     </symbol>
+    <symbol id="default_profile" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <g clip-path="url(#a)">
+        <circle cx="12" cy="11" r="5" fill="currentColor"/>
+        <circle cx="12" cy="24" r="9" fill="currentColor"/>
+      </g>
+    </symbol>
     <symbol id="rocket" width="24" height="24" fill="none" viewBox="0 0 24 24">
       <g clip-path="url(#a)">
         <path fill="#FF3D29" d="M6.06 20.696A1.907 1.907 0 0 0 3.365 18c-.745.745-1.36 4.057-1.36 4.057s3.312-.614 4.057-1.359Z"/>
