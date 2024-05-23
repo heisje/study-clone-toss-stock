@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
-interface FlexProps {
+interface FlexProps extends HTMLAttributes<HTMLDivElement> {
   direction?: "row" | "column";
   justify?:
     | "flex-start"

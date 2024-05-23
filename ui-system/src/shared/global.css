@@ -1,3 +1,6 @@
+@import url('./margin-padding.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 :root {
     --black-white-black: #101012;
     --black-white-white: #FFFFFF;
@@ -14,35 +17,11 @@
 }
 
 body {
-    background-color: var(--blue-grey-tone-grey08);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    background-color: var(--black-white-black);
     color: var(--black-white-white);
 }
 
-.p-g {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-.pl-g {
-    padding-left: 1.5rem;
-}
-
-.pr-g {
-    padding-right: 1.5rem;
-}
-
-.m-g {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.ml-g {
-    margin-left: 1.5rem;
-}
-
-.mr-g {
-    margin-right: 1.5rem;
-}
 
 /*symbol #home {*/
 /*    fill: #FF0000;*/
