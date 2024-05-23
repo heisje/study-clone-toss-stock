@@ -6,8 +6,7 @@ import Flex from "@/components/Layout/Flex.tsx";
 
 const StyledList = styled.div`
   display: flex;
-  width: 25.875rem;
-  padding: 0rem 1.5rem;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 
@@ -79,10 +78,18 @@ const StyledList = styled.div`
 
 interface CardProps {
   num?: number;
+  rate?: string;
+  title?: string;
+  description?: string;
   children?: ReactNode;
 }
 
-export const Card01 = ({ num }: CardProps) => {
+export const Card01 = ({
+  num,
+  title = "타이틀",
+  description = "설명",
+  rate = "+0.0%",
+}: CardProps) => {
   return (
     <StyledList>
       <div className="left">
@@ -101,16 +108,16 @@ export const Card01 = ({ num }: CardProps) => {
             gap={"0.25rem"}
             align={"flex-start"}
           >
-            <Text type={"title-3-2"}>종목</Text>
+            <Text type={"title-3-2"}>{title}</Text>
             <Text as={"caption"} type={"title-6-2"}>
-              결과
+              {description}
             </Text>
           </Flex>
         </Flex>
       </div>
 
       <div className="right">
-        <Text type={"body-5"}>+0.0%</Text>
+        <Text type={"body-5"}>{rate}</Text>
       </div>
     </StyledList>
   );

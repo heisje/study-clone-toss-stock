@@ -7,12 +7,14 @@ import styled from "styled-components"; // interface NavigationBarProps {
 // }
 const NavigationContainer = styled.nav`
   display: inline-flex;
+  position: fixed;
+  bottom: 0;
   padding: 0.375rem 1.6875rem;
   align-items: center;
   gap: 1.875rem;
 
   border-radius: 1.375rem 1.375rem 0rem 0rem;
-  background: var(--blue-grey-tone-grey-08);
+  background: var(--blue-grey-tone-grey08);
   box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset;
 `;
 

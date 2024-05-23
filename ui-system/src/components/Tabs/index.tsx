@@ -17,14 +17,14 @@ const TabContainer = styled.ul`
   }
 
   &.fill {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    display: flex;
+    //display: grid;
+    //grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
     list-style-type: none;
 
     li {
-      flex-shrink: 1;
-      flex-grow: 1;
+      flex: 1 1 0;
     }
   }
 
