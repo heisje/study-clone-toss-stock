@@ -2,6 +2,8 @@
 import "@/shared/global.css";
 import "@/shared/reset.css";
 
+import "@/fonts/static/pretendard.css";
+
 import { NavigationBar } from "@/components/NavigationBar";
 import { Header } from "@/components/Header";
 import { Text } from "@/components/Text";
@@ -20,6 +22,22 @@ import styled from "styled-components";
 const Global = styled.div`
   width: 414px;
   background-color: #1ea7fd; //var(--black-white-black);
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 `;
 
 const Main = styled.main`
