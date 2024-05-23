@@ -1,38 +1,44 @@
-import { Tab } from "@/components/Tabs/Tab.tsx";
 import styled from "styled-components";
+import { HTMLAttributes, ReactNode } from "react";
 
 type tabsLayoutType = "fill" | "hug";
 
-interface tabsProps {
+interface tabsProps extends HTMLAttributes<HTMLUListElement> {
   layout?: tabsLayoutType;
   className?: string;
+  children?: ReactNode;
 }
 
-const TabContainer = styled.nav`
-  width: 25.875rem;
-
+const TabContainer = styled.ul`
   &.hug {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &.fill {
     display: flex;
     align-items: center;
     gap: 0.75rem;
   }
 
+  &.fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    list-style-type: none;
+
+    li {
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
+  }
+
   box-shadow: 0 2px 0 0 var(--blue-grey-tone-grey06);
 `;
-export const Tabs = ({ layout = "hug", className, ...props }: tabsProps) => {
+export const Tabs = ({
+  layout = "hug",
+  className,
+  children,
+  ...props
+}: tabsProps) => {
   return (
     <TabContainer className={`${layout} ${className}`} {...props}>
-      <Tab label={"title1"} on />
-      <Tab label={"title2"} />
-      <Tab label={"title3"} />
-      <Tab label={"title4"} />
-      <Tab label={"title5"} />
+      {children}
     </TabContainer>
   );
 };

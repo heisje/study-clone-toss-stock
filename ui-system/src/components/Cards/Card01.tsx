@@ -82,7 +82,7 @@ interface CardProps {
   children?: ReactNode;
 }
 
-export const Card = ({ num }: CardProps) => {
+export const Card01 = ({ num }: CardProps) => {
   return (
     <StyledList>
       <div className="left">

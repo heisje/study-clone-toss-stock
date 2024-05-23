@@ -13,6 +13,37 @@
     --blue-grey-tone-grey08: #17171B;
 }
 
+body {
+    background-color: var(--blue-grey-tone-grey08);
+    color: var(--black-white-white);
+}
+
+.p-g {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.pl-g {
+    padding-left: 1.5rem;
+}
+
+.pr-g {
+    padding-right: 1.5rem;
+}
+
+.m-g {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.ml-g {
+    margin-left: 1.5rem;
+}
+
+.mr-g {
+    margin-right: 1.5rem;
+}
+
 /*symbol #home {*/
 /*    fill: #FF0000;*/
 /*    stroke: #FF0000;*/

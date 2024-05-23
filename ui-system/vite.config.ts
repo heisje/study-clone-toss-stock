@@ -23,7 +23,7 @@ export default defineConfig({
     // 빌드할 라이브러리에 대한 설정
     lib: {
       // 라이브러리의 진입점
-      entry: path.resolve(__dirname, "src/Card.tsx"),
+      entry: path.resolve(__dirname, "src/Card01.tsx"),
       name: "index",
       fileName: "index",
     },

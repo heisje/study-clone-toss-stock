@@ -7,8 +7,8 @@ interface tabTitleProps {
   className?: string;
 }
 
-const TabContainer = styled.button`
-  display: inline-flex;
+const TabContainer = styled.li`
+  display: flex;
   padding: 1rem 0rem;
   justify-content: center;
   align-items: center;
