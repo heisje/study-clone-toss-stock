@@ -6,7 +6,6 @@ import "@/fonts/static/pretendard.css";
 
 import { NavigationBar } from "@/components/NavigationBar";
 import { Header } from "@/components/Header";
-import { Text } from "@/components/Text";
 import { Tabs } from "@/components/Tabs";
 import { Tab } from "@/components/Tabs/Tab.tsx";
 import { MainStocks } from "@/components/TodayFind/MainStocks.tsx";
@@ -16,10 +15,10 @@ import { FindStocks } from "@/components/TodayFind/FindStocks.tsx";
 import { SearchStocks } from "@/components/TodayFind/SearchStocks.tsx";
 import { GeniusCopycat } from "@/components/TodayFind/GeniusCopycat.tsx";
 import { Footer } from "@/components/Footer";
-import Box from "@/components/Box";
 import styled from "styled-components";
 import { LiveChart } from "@/components/TodayFind/LiveChart.tsx";
 import { StockTags } from "@/components/TodayFind/StockTags.tsx";
+import { HeadAdComponent } from "@/components/Header/HeadAdComponent.tsx";
 
 const Global = styled.div`
   width: 414px;
@@ -40,6 +39,14 @@ const Global = styled.div`
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
+
+  .grey {
+    color: var(--blue-grey-tone-grey03);
+  }
+
+  .red {
+    color: var(--red-red);
+  }
 `;
 
 const Main = styled.main`
@@ -54,9 +61,7 @@ function App() {
       <Main>
         <Header />
 
-        <Box as={"div"} mx={1.5}>
-          <Text type={"title-1-2"}>토스증권</Text>
-        </Box>
+        <HeadAdComponent />
         <Tabs layout={"fill"} px={1.5}>
           <Tab label={"내 주식"} />
           <Tab label={"오늘의 발견"} on />
@@ -65,7 +70,6 @@ function App() {
         <MainStocks />
         <LiveChart />
       </Main>
-
       <PopularCategory />
       <PickViewStocks />
       <FindStocks />

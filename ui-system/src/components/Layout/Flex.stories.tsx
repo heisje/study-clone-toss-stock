@@ -1,16 +1,16 @@
 import { Meta, StoryObj } from "@storybook/react";
-import Flex_ from "@/components/Layout/Flex.tsx";
+import Flex from "@/components/Layout/Flex.tsx";
 
 const meta = {
   title: "Components/Flex",
-  component: Flex_,
+  component: Flex,
   tags: ["autodocs"],
-} satisfies Meta<typeof Flex_>;
+} satisfies Meta<typeof Flex>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Flex: Story = {
+export const Flex_: Story = {
   args: {
     children: (
       <>
