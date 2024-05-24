@@ -17,7 +17,7 @@ const ButtonContainer = styled.button`
 `;
 
 interface TabsMoreProps extends HTMLAttributes<HTMLButtonElement> {
-  text: string;
+  text?: string;
 }
 
 export const TabsMore = ({ text = "더 보기", ...props }: TabsMoreProps) => {
