@@ -23,7 +23,7 @@ import { StockTags } from "@/components/TodayFind/StockTags.tsx";
 
 const Global = styled.div`
   width: 414px;
-  // background-color: #1ea7fd; //var(--black-white-black);
+  background-color: var(--black-white-black);
   font-family:
     "Pretendard Variable",
     Pretendard,
