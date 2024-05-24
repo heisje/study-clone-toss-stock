@@ -14,7 +14,7 @@ import { PopularCategory } from "@/components/TodayFind/PopularCategory.tsx";
 import { PickViewStocks } from "@/components/TodayFind/PickViewStocks.tsx";
 import { FindStocks } from "@/components/TodayFind/FindStocks.tsx";
 import { SearchStocks } from "@/components/TodayFind/SearchStocks.tsx";
-import { StockTags } from "@/components/TodayFind/StockTags.tsx";
+import { GeniusCopycat } from "@/components/TodayFind/GeniusCopycat.tsx";
 import { Footer } from "@/components/Footer";
 import Box from "@/components/Box";
 import styled from "styled-components";
@@ -69,7 +69,7 @@ function App() {
       <PickViewStocks />
       <FindStocks />
       <SearchStocks />
-      <StockTags />
+      <GeniusCopycat />
       <Footer />
 
       <NavigationBar />

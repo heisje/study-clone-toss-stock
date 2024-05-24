@@ -12,7 +12,7 @@ const StockTagsContainer = styled(Box)`
   }
 `;
 
-export const StockTags = () => {
+export const GeniusCopycat = () => {
   return (
     <StockTagsContainer mt={1} py={2.25} px={1.5}>
       <Text as={"h2"} type={"title-2-2"}>
