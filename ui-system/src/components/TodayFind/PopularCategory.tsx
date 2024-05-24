@@ -12,9 +12,9 @@ const DivContainer = styled.div`
   background: var(--blue-grey-tone-grey08);
 `;
 
-const StyledBox = styled(Box)`
-  background: var(--black-white-black);
-`;
+// const StyledBox = styled(Box)`
+//    background: var(--black-white-black);
+// `;
 
 interface fetchedDataList {
   num: number;
@@ -62,9 +62,9 @@ export const PopularCategory = ({
 }: HTMLAttributes<HTMLDivElement>) => {
   return (
     <>
-      <StyledBox pt={1} />
+      <Box pt={1} />
       <DivContainer className={`${className}`} {...props}>
-        <Box mt={2} mx={1.5} mb={0.75}>
+        <Box pt={2} mx={1.5} mb={0.75}>
           <Text type={"title-2-2"}>지금 뜨고 있는 카테고리</Text>
         </Box>
         <Tabs layout={"fill"}>

@@ -1,3 +1,5 @@
+import Box from "@/components/Box";
+
 export const Footer = () => {
-  return <div></div>;
+  return <Box pt={15}></Box>;
 };

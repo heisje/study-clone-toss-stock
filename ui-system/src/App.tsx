@@ -21,7 +21,7 @@ import styled from "styled-components";
 
 const Global = styled.div`
   width: 414px;
-  background-color: #1ea7fd; //var(--black-white-black);
+  // background-color: #1ea7fd; //var(--black-white-black);
   font-family:
     "Pretendard Variable",
     Pretendard,
@@ -60,16 +60,16 @@ function App() {
           <Tab label={"오늘의 발견"} on />
           <Tab label={"뉴스"} />
         </Tabs>
-
-        <MainStocks />
-        {/*<LiveChart className={"px-15"} />*/}
-        <PopularCategory />
-        <PickViewStocks />
-        <FindStocks />
-        <SearchStocks />
-        <StockTags />
-        <Footer />
       </Main>
+      <MainStocks />
+      {/*<LiveChart className={"px-15"} />*/}
+      <PopularCategory />
+      <PickViewStocks />
+      <FindStocks />
+      <SearchStocks />
+      <StockTags />
+      <Footer />
+
       <NavigationBar />
     </Global>
   );

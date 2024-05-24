@@ -16,10 +16,14 @@ const ButtonContainer = styled.button`
   color: var(--blue-grey-tone-grey02);
 `;
 
-export const TabsMore = ({ ...props }: HTMLAttributes<HTMLButtonElement>) => {
+interface TabsMoreProps extends HTMLAttributes<HTMLButtonElement> {
+  text: string;
+}
+
+export const TabsMore = ({ text = "더 보기", ...props }: TabsMoreProps) => {
   return (
     <ButtonContainer {...props}>
-      <Text type={"body-4"}>더 보기</Text>
+      <Text type={"body-4"}>{text}</Text>
     </ButtonContainer>
   );
 };
