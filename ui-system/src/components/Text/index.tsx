@@ -42,3 +42,5 @@ export const Text: React.FC<TextProps> = ({
     </StyledText>
   );
 };
+
+export default Text;
