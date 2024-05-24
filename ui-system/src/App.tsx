@@ -19,6 +19,7 @@ import { Footer } from "@/components/Footer";
 import Box from "@/components/Box";
 import styled from "styled-components";
 import { LiveChart } from "@/components/TodayFind/LiveChart.tsx";
+import { StockTags } from "@/components/TodayFind/StockTags.tsx";
 
 const Global = styled.div`
   width: 414px;
@@ -70,6 +71,7 @@ function App() {
       <FindStocks />
       <SearchStocks />
       <GeniusCopycat />
+      <StockTags />
       <Footer />
 
       <NavigationBar />
