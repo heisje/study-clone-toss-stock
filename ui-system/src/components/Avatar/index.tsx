@@ -15,7 +15,7 @@ const sizes: Record<sizeType, string> = {
   xxsmall: "1.25rem",
   xsmall: "1.87rem",
   small: "2.25rem",
-  medium: "3rem",
+  medium: "2.5rem",
   large: "3.5rem",
   xlarge: "5rem",
   xxlarge: "6.625rem",
@@ -38,6 +38,7 @@ const countryCodeToIconId: Record<countryCodeType, SVGIconType> = {
 const AvatarContainer = styled.div<{ size: sizeType }>`
   display: inline-block;
   position: relative;
+
   width: ${({ size }) => sizes[size]};
   height: ${({ size }) => sizes[size]};
 `;
@@ -47,6 +48,12 @@ const ImageContainer = styled.img`
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+`;
+
+const SvgContainer = styled(SvgIcon)`
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: var(--blue-grey-tone-grey02);
 `;
 
 const BadgeContainer = styled.div`
@@ -84,7 +91,7 @@ export const Avator = ({
       {currentImage ? (
         <ImageContainer src={currentImage} alt="Profile" />
       ) : (
-        <SvgIcon iconId={"default_profile"} size={sizes[size]} />
+        <SvgContainer iconId={"default_profile"} size={sizes[size]} />
       )}
       {countryCode && (
         <BadgeContainer>

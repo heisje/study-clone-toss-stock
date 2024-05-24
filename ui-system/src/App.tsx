@@ -18,6 +18,7 @@ import { StockTags } from "@/components/TodayFind/StockTags.tsx";
 import { Footer } from "@/components/Footer";
 import Box from "@/components/Box";
 import styled from "styled-components";
+import { LiveChart } from "@/components/TodayFind/LiveChart.tsx";
 
 const Global = styled.div`
   width: 414px;
@@ -55,14 +56,15 @@ function App() {
         <Box as={"div"} mx={1.5}>
           <Text type={"title-1-2"}>토스증권</Text>
         </Box>
-        <Tabs layout={"fill"}>
+        <Tabs layout={"fill"} px={1.5}>
           <Tab label={"내 주식"} />
           <Tab label={"오늘의 발견"} on />
           <Tab label={"뉴스"} />
         </Tabs>
+        <MainStocks />
+        <LiveChart />
       </Main>
-      <MainStocks />
-      {/*<LiveChart className={"px-15"} />*/}
+
       <PopularCategory />
       <PickViewStocks />
       <FindStocks />

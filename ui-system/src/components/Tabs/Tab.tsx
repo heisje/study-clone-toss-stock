@@ -13,6 +13,7 @@ const TabContainer = styled.li`
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+  width: 3.375rem;
 
   background: none;
   border: none;

@@ -67,7 +67,7 @@ export const PopularCategory = ({
         <Box pt={2} mx={1.5} mb={0.75}>
           <Text type={"title-2-2"}>지금 뜨고 있는 카테고리</Text>
         </Box>
-        <Tabs layout={"fill"}>
+        <Tabs layout={"fill"} px={1.5}>
           <Tab label={"국내"} />
           <Tab label={"해외"} on />
         </Tabs>

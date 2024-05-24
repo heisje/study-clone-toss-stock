@@ -1,15 +1,16 @@
 import styled from "styled-components";
-import { HTMLAttributes, ReactNode } from "react";
+import { ReactNode } from "react";
+import Box, { BoxProps } from "@/components/Box";
 
 type tabsLayoutType = "fill" | "hug";
 
-interface tabsProps extends HTMLAttributes<HTMLUListElement> {
+interface tabsProps extends BoxProps {
   layout?: tabsLayoutType;
   className?: string;
   children?: ReactNode;
 }
 
-const TabContainer = styled.ul`
+const TabContainer = styled(Box)`
   &.hug {
     display: flex;
     align-items: center;
@@ -20,7 +21,7 @@ const TabContainer = styled.ul`
     display: flex;
     //display: grid;
     //grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 0.75rem;
     list-style-type: none;
 
     li {
