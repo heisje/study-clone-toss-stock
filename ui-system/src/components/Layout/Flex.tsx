@@ -21,7 +21,7 @@ const FlexContainer = styled.div<FlexProps>`
   display: flex;
   flex-direction: ${({ direction = "row" }) => direction};
   justify-content: ${({ justify = "flex-start" }) => justify};
-  align-items: ${({ align = "stretch" }) => align};
+  align-items: ${({ align = "flex-start" }) => align};
   flex-wrap: ${({ wrap = "nowrap" }) => wrap};
   gap: ${({ gap }) => gap};
 `;
