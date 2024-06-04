@@ -19,11 +19,11 @@ interface FlexProps extends HTMLAttributes<HTMLDivElement> {
 
 const FlexContainer = styled.div<FlexProps>`
   display: flex;
-  flex-direction: ${({ direction = "row" }) => direction};
+  flex-flow: ${({ direction = "row" }) => direction};
   justify-content: ${({ justify = "flex-start" }) => justify};
-  align-items: ${({ align = "flex-start" }) => align};
+  align-items: ${({ align = "stretch" }) => align};
   flex-wrap: ${({ wrap = "nowrap" }) => wrap};
-  gap: ${({ gap }) => gap};
+  gap: ${({ gap = "0" }) => gap};
 `;
 
 export const Flex = ({ children, className, ...props }: FlexProps) => {
