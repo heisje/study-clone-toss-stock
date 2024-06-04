@@ -24,6 +24,7 @@ interface TextProps extends HTMLAttributes<HTMLElement> {
 const StyledText = styled.div<TextProps>`
   color: inherit;
   display: block;
+  text-align: start;
 `;
 
 export const Text: React.FC<TextProps> = ({
