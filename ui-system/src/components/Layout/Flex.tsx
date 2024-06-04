@@ -13,7 +13,6 @@ interface FlexProps extends HTMLAttributes<HTMLDivElement> {
   align?: "flex-start" | "flex-end" | "center" | "baseline" | "stretch";
   wrap?: "nowrap" | "wrap" | "wrap-reverse";
   gap?: string;
-  className?: string;
   children?: ReactNode;
 }
 
@@ -26,12 +25,8 @@ const FlexContainer = styled.div<FlexProps>`
   gap: ${({ gap = "0" }) => gap};
 `;
 
-export const Flex = ({ children, className, ...props }: FlexProps) => {
-  return (
-    <FlexContainer className={className} {...props}>
-      {children}
-    </FlexContainer>
-  );
+export const Flex = ({ children, ...props }: FlexProps) => {
+  return <FlexContainer {...props}>{children}</FlexContainer>;
 };
 
 export default Flex;
