@@ -13,10 +13,13 @@
     --blue-grey-tone-grey06: #2C2C35;
     --blue-grey-tone-grey07: #202126;
     --blue-grey-tone-grey08: #17171B;
+
 }
+
 
 body {
     color: var(--black-white-white);
+    background: var(--blue-grey-tone-grey06);
 }
 
 

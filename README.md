@@ -1,5 +1,9 @@
 # 토스 주식 클론 스터디
 
+[결과물링크](https://663f9414d4b5f61567c50725-idusrrwaxm.chromatic.com/?path=/docs/components-app--docs)
+
+![img.png](./ui-system/assets/img_5.png)
+
 ## 개요
 
 토스 주식 UI를 클론디자인/코딩 해보는 스터디
@@ -43,7 +47,7 @@
 
 ### 아키텍처
 
-![architecture](./assets/architecture.png)
+![architecture](./ui-system/assets/architecture.png)
 
 # 구현 상세
 
@@ -51,7 +55,7 @@
 
 토스 모바일 UI를 Figma를 통해 디자인시스템을 제작함. 부족하거나 숨겨진 부분은 당근 디자인시스템에서 해답을 얻음.
 
-![img.png](./assets/img_1.png)
+![img.png](./ui-system/assets/img_1.png)
 
 ## 2. 디자인 시스템 추출
 
@@ -83,7 +87,7 @@
 ## 3. 개발
 
 디자인시스템기반 컴포넌트 개발. 타입을 잘 지정해두니 AutoDocs기능이 활용이 쉬웠다.  
-![img_2](./assets/img_2.png)
+![img_2](./ui-system/assets/img_2.png)
 
 ### 3-1. 자동화 배포
 
@@ -92,15 +96,15 @@ github-workflow를 사용해 자동배포를 구현했다.
 chromatic으로 배포되어 디자이너는 쉽게 컴포넌트 단위의 변경사항을 확인해볼 수 있게 했다. 추가적으로 시각적 회귀테스트를 도입하여 어떤 점이 변경되었는지 쉽게 확인할 수 있게 만들었다.
 
 **시각적 회귀 테스트가 반영된 컴포넌트 확인**
-![img_3](./assets/img_3.png)
+![img_3](./ui-system/assets/img_3.png)
 
 ## 4. 완성
 
-![img.png](./assets/img_4.png)
+![img.png](./ui-system/assets/img_5.png)
 
 # 회고
 
 - npm으로 배포해보며 Rollup과 Vite를 활용한 번들러 지식도 얻을 수 있었다.
 - 로직을 많이 배제하여 시간 안에 구현했다. 체계화된 UI개발이 얼마나 어려운지도 깨달았다. 다양한 것을 실험해보며, 프로젝트 기간 2주 중 1.5주에 프로젝트 세팅에만 시간을 보냈다. UI구현은 단 3일..
-- npm으로 배포 후 reactNative에서 구현해보려했지만, 못해서 아쉽다.
+- npm으로 배포 후 모노레포 reactNative에서 구현해보려했지만, 못해서 아쉽다.
 - 다양한 디바이스 환경을 고려하는 어려움을 이해할 수 있었다.
