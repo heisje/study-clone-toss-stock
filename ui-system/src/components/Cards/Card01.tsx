@@ -102,12 +102,7 @@ export const Card01 = ({
           <div className="profile">
             <SvgIcon iconId="rocket" />
           </div>
-          <Flex
-            className={"text"}
-            direction={"column"}
-            gap={"0.25rem"}
-            align={"flex-start"}
-          >
+          <Flex className={"text"} direction={"column"} gap={"0.25rem"}>
             <Text type={"title-3-2"}>{title}</Text>
             <Text as={"caption"} type={"title-6-2"}>
               {description}

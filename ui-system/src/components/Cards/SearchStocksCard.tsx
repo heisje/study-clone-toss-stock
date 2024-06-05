@@ -49,12 +49,7 @@ export const SearchStocksCard = ({
           <SvgIcon iconId={iconId} size={"2.5rem"} />
         </Box>
 
-        <Flex
-          direction={"column"}
-          justify={"center"}
-          align={"flex-start"}
-          gap={"0.25rem"}
-        >
+        <Flex direction={"column"} justify={"center"} gap={"0.25rem"}>
           <Text as={"h3"} type={"title-3-2"}>
             {title}
           </Text>

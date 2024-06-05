@@ -52,12 +52,7 @@ export const LiveChartCard = ({
         <Box ml={0.25}>
           <Flex gap={"1rem"}>
             <Avator image={image} size={"medium"} countryCode={countryCode} />
-            <Flex
-              direction={"column"}
-              justify={"center"}
-              align={"flex-start"}
-              gap={"0.25rem"}
-            >
+            <Flex direction={"column"} justify={"center"} gap={"0.25rem"}>
               <Text as={"h3"} type={"title-4-2"}>
                 {title}
               </Text>
